@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <!-- Aquí aparece texto fijo "Hola," y luego una parte dinámica -->
+    
+    <!-- <%= nombre %> es una expresión de EJS: 
+         - El símbolo <%= ... %> sirve para mostrar en pantalla el valor de una variable enviada desde el servidor.
+         - En este caso, "nombre" viene desde app.js cuando hacemos res.render("saludo", { nombre: "Ana" }).
+         - Si nombre = "Ana", el resultado final en el navegador será: Hola, Ana
+    -->
+    <h1>Hola, <%= nombre %> </h1>
+
+    <!-- Enlace para volver a la página principal -->
+    <!-- "/" apunta a la ruta raíz del servidor, que normalmente abre index.html desde carpeta public -->
+    <a href="/">Volver al inicio</a>        
+</body>
+</html>
